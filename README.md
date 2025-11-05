@@ -28,7 +28,7 @@ npm install
 npm run dev
 
 ### 4️⃣ Open your browser
-Visit http://localhost:5173 and explore ✨Solace✨
+Visit http://localhost:3000 and explore ✨Solace✨
 
 ---
 
