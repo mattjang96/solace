@@ -16,24 +16,30 @@ export default function Home() {
     });
   }, []);
 
-  const onChange = (e) => {
-    const searchTerm = e.target.value;
-
-    document.getElementById("search-term").innerHTML = searchTerm;
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const term = e.target.value;
+    setSearchTerm(term);
 
     console.log("filtering advocates...");
-    const filteredAdvocates = advocates.filter((advocate) => {
+    if (!term) {
+      setFilteredAdvocates(advocates);
+      return;
+    }
+
+    const filtered = advocates.filter((advocate) => {
       return (
-        advocate.firstName.includes(searchTerm) ||
-        advocate.lastName.includes(searchTerm) ||
-        advocate.city.includes(searchTerm) ||
-        advocate.degree.includes(searchTerm) ||
-        advocate.specialties.includes(searchTerm) ||
-        advocate.yearsOfExperience.includes(searchTerm)
+        advocate.firstName.toLowerCase().includes(term.toLowerCase()) ||
+        advocate.lastName.toLowerCase().includes(term.toLowerCase()) ||
+        advocate.city.toLowerCase().includes(term.toLowerCase()) ||
+        advocate.degree.toLowerCase().includes(term.toLowerCase()) ||
+        advocate.specialties.some((specialty: string) =>
+          specialty.toLowerCase().includes(term.toLowerCase())
+        ) ||
+        advocate.yearsOfExperience.toString().includes(term)
       );
     });
 
-    setFilteredAdvocates(filteredAdvocates);
+    setFilteredAdvocates(filtered);
   };
 
   const onClick = () => {
