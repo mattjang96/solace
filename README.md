@@ -18,7 +18,7 @@ Whether you're looking for a doctor, therapist, or health coach — Solace conne
 
 ## 🚀 Getting Started
 ### 1️⃣ Clone the repository
-git clone https://github.com/yourusername/solace-medical-app.git
+git clone https://github.com/mattjang96/solace.git
 cd solace-medical-app```
 
 ### 2️⃣ Install dependencies
