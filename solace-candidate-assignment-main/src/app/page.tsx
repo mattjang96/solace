@@ -8,12 +8,20 @@ export default function Home() {
 
   useEffect(() => {
     console.log("fetching advocates...");
-    fetch("/api/advocates").then((response) => {
-      response.json().then((jsonResponse) => {
+    fetch("/api/advocates")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch advocates");
+        }
+        return response.json();
+      })
+      .then((jsonResponse) => {
         setAdvocates(jsonResponse.data);
         setFilteredAdvocates(jsonResponse.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching advocates:", error);
       });
-    });
   }, []);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
