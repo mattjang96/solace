@@ -55,9 +55,13 @@ export default function Home() {
       <div>
         <p>Search</p>
         <p>
-          Searching for: <span id="search-term"></span>
+          Searching for: <span>{searchTerm}</span>
         </p>
-        <input style={{ border: "1px solid black" }} onChange={onChange} />
+        <input
+          style={{ border: "1px solid black" }}
+          value={searchTerm}
+          onChange={onChange}
+        />
         <button onClick={onClick}>Reset Search</button>
       </div>
       <br />
@@ -75,7 +79,7 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>
-        {filteredAdvocates.map((advocate, index) => {
+          {filteredAdvocates.map((advocate, index) => {
             return (
               <tr key={index}>
                 <td>{advocate.firstName}</td>
