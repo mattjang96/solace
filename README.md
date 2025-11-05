@@ -3,6 +3,7 @@
 Solace is a clean and modern web application designed to help users **find trusted medical professionals** with ease.  
 Whether you're looking for a doctor, therapist, or health coach — Solace connects you with experts who truly care.
 
+![Solace Preview](./preview.png)
 
 ---
 
