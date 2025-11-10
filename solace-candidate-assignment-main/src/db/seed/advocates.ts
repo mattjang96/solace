@@ -46,6 +46,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 10,
     phoneNumber: 5551234567,
+    photoUrl: "https://i.pravatar.cc/150?img=1",
   },
   {
     firstName: "Jane",
@@ -55,6 +56,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 8,
     phoneNumber: 5559876543,
+    photoUrl: "https://i.pravatar.cc/150?img=5",
   },
   {
     firstName: "Alice",
@@ -64,6 +66,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 5,
     phoneNumber: 5554567890,
+    photoUrl: "https://i.pravatar.cc/150?img=9",
   },
   {
     firstName: "Michael",
@@ -73,6 +76,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 12,
     phoneNumber: 5556543210,
+    photoUrl: "https://i.pravatar.cc/150?img=12",
   },
   {
     firstName: "Emily",
@@ -82,6 +86,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 7,
     phoneNumber: 5553210987,
+    photoUrl: "https://i.pravatar.cc/150?img=20",
   },
   {
     firstName: "Chris",
@@ -91,6 +96,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 9,
     phoneNumber: 5557890123,
+    photoUrl: "https://i.pravatar.cc/150?img=33",
   },
   {
     firstName: "Jessica",
@@ -100,6 +106,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 11,
     phoneNumber: 5554561234,
+    photoUrl: "https://i.pravatar.cc/150?img=45",
   },
   {
     firstName: "David",
@@ -109,6 +116,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 6,
     phoneNumber: 5557896543,
+    photoUrl: "https://i.pravatar.cc/150?img=47",
   },
   {
     firstName: "Laura",
@@ -118,6 +126,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 4,
     phoneNumber: 5550123456,
+    photoUrl: "https://i.pravatar.cc/150?img=51",
   },
   {
     firstName: "Daniel",
@@ -127,6 +136,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 13,
     phoneNumber: 5553217654,
+    photoUrl: "https://i.pravatar.cc/150?img=68",
   },
   {
     firstName: "Sarah",
@@ -136,6 +146,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 10,
     phoneNumber: 5551238765,
+    photoUrl: "https://i.pravatar.cc/150?img=27",
   },
   {
     firstName: "James",
@@ -145,6 +156,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 5,
     phoneNumber: 5556540987,
+    photoUrl: "https://i.pravatar.cc/150?img=13",
   },
   {
     firstName: "Megan",
@@ -154,6 +166,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 14,
     phoneNumber: 5559873456,
+    photoUrl: "https://i.pravatar.cc/150?img=32",
   },
   {
     firstName: "Joshua",
@@ -163,6 +176,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 9,
     phoneNumber: 5556781234,
+    photoUrl: "https://i.pravatar.cc/150?img=15",
   },
   {
     firstName: "Amanda",
@@ -172,6 +186,7 @@ const advocateData = [
     specialties: specialties.slice(...randomSpecialty()),
     yearsOfExperience: 3,
     phoneNumber: 5559872345,
+    photoUrl: "https://i.pravatar.cc/150?img=29",
   },
 ];
 
